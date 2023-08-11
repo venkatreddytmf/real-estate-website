@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fibbonic series</title>
+</head>
+
+<body>
+    <script>
+        // JavaScript program to display Fibonacci sequence using recursion
+        function Fibonacci(num) {
+            if (num < 2)
+                return num;
+
+            else
+                return Fibonacci(num - 1) + Fibonacci(num - 2);
+        }
+
+        var terms = prompt('Enter the number of terms: ');
+
+        if (terms <= 0)
+            document.writeln('Enter a positive integer.');
+
+        else {
+            for (let i = 0; i < terms; i++)
+                document.writeln(Fibonacci(i));
+        }
+
+    </script>
+
+</body>
+
+</html>

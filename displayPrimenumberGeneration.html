@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prime number Generation</title>
+</head>
+
+<body>
+    <script>
+        const isPrimeNumber = (number) => {
+            // program to check if a number is prime or not
+            for (let i = 2; i <= number / 2; i++) {
+                if (number % i == 0) {
+                    return false;
+                }
+            }
+            return true;
+        };
+
+        function getAllPrimeNumbers(number) {
+            let primeNumbers = [];
+            for (let i = 2; i <= number; i++) {
+                if (isPrimeNumber(i)) primeNumbers.push(i);
+            }
+            return primeNumbers;
+        }
+        document.writeln(getAllPrimeNumbers(70)); 
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>factors of given number</title>
+</head>
+
+<body>
+    <script>
+        const num = prompt('Enter a positive number: ');
+
+        document.writeln("The factors of " + num + "is ");
+
+        for (let i = 1; i < num; i++) {
+
+            // checking if the number is a factor or not. 
+            if (num % i == 0)
+                document.writeln(i);
+        }
+        document.writeln(num);
+    </script>
+
+</body>
+
+</html>

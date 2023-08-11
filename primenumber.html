@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prime number or not</title>
+</head>
+<body>
+    <script>
+        var number,count
+        count = 0;
+        number = prompt("Enter the value")
+       function isPrime(number){
+   
+
+   for(var i = 1;i<=number;i++)    {
+      if(number%i == 0){
+         count = count + 1;
+      }
+   }
+   if(count == 2){
+      return true;
+   }
+   else{
+      return false;
+   }
+}
+
+// checking number are prime numbers or not 
+if(isPrime(number)){
+ document.writeln(number+" is the Prime number");
+}
+else{    
+    document.writeln(number+" is not a Prime number")
+}
+
+
+    </script>
+    
+</body>
+</html>

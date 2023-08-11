@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>factorial iof number</title>
+</head>
+
+<body>
+    <script>
+        // JavaScript Program to find the factorial of a number
+        function factorial(x) {
+
+            // Base Condition 
+            if (x == 0)
+                return 1;
+
+            else
+                return x * factorial(x - 1);
+        }
+
+        var num = prompt("Enter a positive number: ");
+
+        if (num >= 0) {
+            const result = factorial(num);
+            document.writeln("The factorial of the entered number is " + result);
+        }
+        else
+            document.writeln("Enter a positive number.");
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sum of digits in number</title>
+</head>
+
+<body>
+    <script>
+        var n, remainder, sumOfDigits = 0;
+        n = prompt("enter the number")
+        while (n) {
+            remainder = n % 10;
+            
+            sumOfDigits = sumOfDigits + remainder;
+            // we used math.floor  for getting digit  value from decimal value
+            n = Math.floor(n / 10);
+        }
+        document.writeln(sumOfDigits);
+
+    </script>
+
+</body>
+
+</html>

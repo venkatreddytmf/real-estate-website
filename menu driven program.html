@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menu driven program</title>
+</head>
+
+<body>
+    <script>
+        var i, j, r, ch;
+        var n;
+        var sum = 0;
+
+        ch = parseInt(prompt("Enter 1 for Armstrong number and 2 for sum of digits"));
+        switch (ch) {
+
+            case 1:
+                document.writeln("Armstrong Number : - ");
+                for (i = 1; i <= 1000; i++) {
+                    j = i;
+                    sum = 0;
+                    while (j > 0) {
+                        r = j % 10;
+                        sum = sum + (r * r * r);
+                        j = parseInt(j / 10);
+                    }
+                    if (sum == i) {
+                        document.write(sum +" , ");
+                    }
+                }
+                break;
+            case 2:
+                n = parseInt(prompt("Enter any number for finding sum of digits"));
+                while (n > 0) {
+                    sum = sum + n % 10;
+                    n = parseInt(n / 10);
+                }
+                document.write("<br>"+"Sumgits= "+sum);
+                    break;
+                    default :
+                    alert("Wrong choice");
+                    
+}
+    </script>
+</body>
+
+</html>
