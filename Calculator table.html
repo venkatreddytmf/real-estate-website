@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>creating table </title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" />
+
+    <style>
+        .btn {
+            width: 150x;
+            min-width: 200px;
+            padding: auto;
+            /* this for smallest devices */
+        }
+    </style>
+</head>
+
+<body>
+    <h1 text-align="center">
+        Basic calculator
+    </h1>
+     <!-- we created table by using bootstrap-->
+     
+    <div  class="dum">
+        <div class="btn-group-vertical" role="group" aria-label="Vertical button group">
+            <!--  we created a first row using class called btn btn secondary dark -->
+            <div class="btn-group btn-group-lg" role="group" aria-label="First Row">
+                <input type="button" class="btn btn-secondary btn-outline-dark" waves-effect value="7"></input>
+                <input type="button" class="btn btn-secondary btn-outline-dark" waves-effect value="8"></input>
+                <input type="button" class="btn btn-secondary btn-outline-dark" waves-effect value="9"></input>
+                <input type="button" class="btn btn-secondary btn-outline-dark" waves-effect value="+"></input>
+            </div>
+            <!-- we created second row and its colomns in it-->
+            <div class="btn-group btn-group-lg" role="group" aria-label="Second Row">
+                <input type="button" class="btn btn-secondary btn-outline-dark" waves-effect value="4"></input>
+                <input type="button" class="btn btn-secondary btn-outline-dark" waves-effect value="5"></input>
+                <input type="button" class="btn btn-secondary btn-outline-dark" waves-effect value="6"></input>
+                <input type="button" class="btn btn-secondary btn-outline-dark" waves-effect value="-"></input>
+            </div>
+            <!--  we created a third row using class called btn btn secondary dark -->
+            <div class="btn-group btn-group-lg" role="group" aria-label="Third Row">
+
+                <input type="button" class="btn btn-secondary btn-outline-dark" waves-effect value="1"></input>
+                <input type="button" class="btn btn-secondary btn-outline-dark" waves-effect value="2"></input>
+                <input type="button" class="btn btn-secondary btn-outline-dark" waves-effect value="3"></input>
+                <input type="button" class="btn btn-secondary btn-outline-dark" waves-effect value="*"></input>
+            </div>
+            <!--  we created a fourth row using class called btn btn secondary dark -->
+            <div class="btn-group btn-group-lg" role="group" aria-label="Fourth Row">
+                <input type="button" class="btn btn-secondary btn-outline-dark" waves-effect value="0"></input>
+                <input type="button" class="btn btn-secondary btn-outline-dark" waves-effect value="."></input>
+                <input type="button" class="btn btn-secondary btn-outline-dark" waves-effect value="+/-"></input>
+                <input type="button" class="btn btn-secondary btn-outline-dark" waves-effect value="/"></input>
+            </div>
+            <!--  we created a single  row  with one colomn   using class called btn btn secondary dark -->
+            <div class="btn-group btn-group-lg" role="group" aria-label="Basic example">
+                <input type="button" class="btn btn-secondary btn-outline-dark" waves-effect value="="></input>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
