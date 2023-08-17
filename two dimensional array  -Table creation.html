@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>tw0 dimensional array</title>
+  <style>
+    tr {
+      background-color: aqua;
+    }
+
+    th {
+      background-color: bisque;
+    }
+
+    thead {
+      background-color: rgb(70, 214, 224);
+      color: white;
+      line-height: 30px;
+    }
+
+    tbody {
+      background-color: bisque;
+      line-height: 30px;
+      text-align: center;
+    }
+
+    .lan {
+      background-color: blue;
+      color: bisque;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .content {
+      width: 580px;
+      margin: 0 auto;
+      padding: 3%;
+      padding-left: 6%;
+    }
+  </style>
+
+</head>
+
+<body>
+
+
+  <h1 class="lan"> Employee Details are represented in table format </h1>
+
+  <div align="center" class=" content">
+
+
+    <script>
+      //  I  created a multidimentional array to store employee data// 
+      var employee = [
+        ["01", "Rohit", "Kadapa", "Developer", "50000"],
+        ["02", "Narendra", "vizag", "Designer+TL", "90000"],
+        ["03", "Venkat", "Guntur", "Design", "45000"],
+        ["04", " vamshi", "Hyd", "Analist", "45000"],
+        ["05", "yakub", "Janagam", "Tester", "45000"],
+        ["06", " agni", "Ibrahimpatnam", "HR", "45000"],
+        ["07", "badri", "Bn reddy", "Team Head", "45000"]
+      ]
+      // I used a forEach method to insert  data from array to table //
+      document.writeln("<table border=5px ><tr><th>Employee Id</th><th>E Name</th><th>E address</th><th>Job Role</th><th> E Salary</th>");
+      employee.forEach(Element => document.writeln("<tr background-color: red><td>" + Element[0] + "</td><td>" + Element[1] + "</td><td>" + Element[2] + "</td><td>" + Element[3] + "</td><td>" + Element[4] + "</td></tr>"))
+      document.writeln("</table>");
+    </script>
+    <!--- Task completed-->
+  </div>
+</body>
+
+</html>
